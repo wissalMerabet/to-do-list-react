@@ -1,0 +1,101 @@
+/* Page background styling */
+body {
+    background-color: #f3e5f5; /* Light purple background for the page */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container styling */
+.App {
+    text-align: center;
+    margin-top: 40px; /* Add top margin to position it towards the top */
+    padding: 20px;
+    border: 2px solid #ba68c8; /* Purple border */
+    border-radius: 15px;
+    width: 50%; /* Increase the width of the container */
+    background-color: #fce4ec; /* Rose background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+    font-size: 2em;
+    color: #9c27b0; /* Purple */
+    margin-bottom: 20px;
+}
+
+/* List styling */
+.Tlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* List item styling */
+.Tlist li {
+    background: #f8bbd0; /* Light rose */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.Tlist li:hover {
+    background: #f48fb1; /* Darker rose on hover */
+}
+
+.Tlist li::before {
+    content: "🌸"; /* Emoji */
+    margin-right: 10px;
+    font-size: 1.5em; /* Adjust size as needed */
+}
+
+/* Text styling */
+.text {
+    flex-grow: 1;
+    text-align: left;
+    color: #7b1fa2; /* Dark purple */
+}
+
+/* Input field styling */
+.Tinput {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ba68c8; /* Purple border */
+    border-radius: 10px;
+    width: calc(100% - 22px); /* Adjust to match padding and border */
+    background-color: #fff3e0; /* Lighter rose */
+}
+
+/* Button styling */
+.TButton, .Delete-btn {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #e91e63; /* Dark pink */
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.TButton:hover, .Delete-btn:hover {
+    background-color: #c2185b; /* Darker shade on hover */
+}
+
+/* Delete button specific styling */
+.Delete-btn {
+    background-color: #9c27b0; /* Purple */
+}
+
+.Delete-btn:hover {
+    background-color: #7b1fa2; /* Darker shade on hover */
+}
